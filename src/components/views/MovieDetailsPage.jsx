@@ -90,7 +90,7 @@ const MovieDetailsPage = ({ match, location, history }) => {
             </ul>
           </div>
 
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<Spinner type="TailSpin" color="#00BFFF" height={60} width={60} className="Spinner" />}>
             <Switch>
               <Route
                 path={`${match.path}/cast`}

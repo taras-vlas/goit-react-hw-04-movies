@@ -9,10 +9,10 @@ import Spinner from 'react-loader-spinner';
 
 import routes from '../../routes';
 
-const Content = () => (  
-  <Suspense fallback={<Spinner />}>
-   
-    <Switch>
+const Content = () => (
+  <Suspense fallback={<Spinner type="TailSpin" color="#00BFFF" height={60} width={60} className="Spinner" />}>
+      {/* Loading && <Spinner />  */}
+        <Switch>
       {routes.map(({ path, exactRoute, component }) => (
         <Route key={path} path={path} exact={exactRoute} component={component} />
       ))}

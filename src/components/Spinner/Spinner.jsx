@@ -1,12 +1,12 @@
-import LoaderSpinner from 'react-loader-spinner';
+import Loader from 'react-loader-spinner';
   // import { styled } from 'react-jss';
 import styles from './Spinner.module.css';
 
 const Spinner = () => {
   return (
     <div className={styles.Spinner}>
-      <LoaderSpinner
-        type="Watch"
+      <Loader
+        type="TailSpin"
         color="#00BFFF"
         height={80}
         width={80}
