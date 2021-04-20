@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import './styles/base.scss';
 import 'modern-normalize/modern-normalize.css';
+import './styles.css';
+//import './styles/base.scss';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-
       {/* слідкує за адресною строкою */}
       <BrowserRouter>  
         <App />
@@ -16,3 +16,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
+
